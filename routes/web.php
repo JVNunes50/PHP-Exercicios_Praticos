@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/banco/teste', function () {
+    return view('teste');
+});
+
+Route::post('/requisicao', function () {
+    return "Essa seria uma requisao via POST";
+});
+
+Route::put('/requisicao', function () {
+    return "Essa seria uma requisao via PUT";
+});
+
+Route::delete('/requisicao', function () {
+    return "Essa seria uma requisao via DELETE";
 });
